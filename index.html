@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title> 
+
+
+</head><style>
+    body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7099a2;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+
+header {
+    background: #b5b1b1;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    transform: translateY(-2px);
+}
+
+
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 2px solid #4CAF50;
+}
+
+
+a {
+    color: #333;
+    
+}
+.image
+    { float: left; 
+     margin-right: 10px; 
+     } 
+ .text 
+     { overflow: hidden; 
+     }
+     @media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+</style>
+<body><center>
+    <header>
+        <div >
+            <h1><marquee>My Portfolio</marquee></h1>
+            <img src="download (2).jfif" height="80" width="110">
+            <nav>
+                
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="btn">
+            <h2>About Me</h2>
+            <p>Welcome to my personal portfolio! I am Tanvi Pharade,
+                 a student currently pursuing btech in AI & Data Science</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="btn:hover">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3><a href="IDCARD.html">ID CARD</a></h3>
+                <div class="gallery-item"><img src="ex16.jpg" height="110" width="180" class="image"></div>
+                <div class="text">
+                    <p>The ID Card Design project involves creating a digital identification card
+                         using HTML and CSS. This project demonstrates skills in web development,
+                          particularly in structuring content with HTML and styling with CSS to achieve
+                           a professional and visually appealing ID card layout.</p>
+                    <center></center>
+                    </div>
+                </div>
+            <div class="project">
+              <h3><a href="login.html">APPLICATION FORM</a></h3>
+                <p>The Application Form Design project involves creating a functional and aesthetically
+                 pleasing application form using HTML and CSS. This project demonstrates skills in web development,
+                  particularly in structuring form elements with HTML and enhancing the form's appearance with CSS
+                   to ensure a user-friendly experience.</p>
+            </div>
+
+         
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Adaptability</li>
+                <li>Leadership</li>
+                <li></li>
+             
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+           
+            <address>
+                Email Id:<a href="mailto:tanvipharade@gamil.com">tanvipharade@gamil.com</a><br>
+                Phone No.8275797243<br>
+                Facebook:<a href="https://www.facebook.com/TrekBicycleIndia/">@trekkers</a><br>
+                Instagram:<a href="https://www.facebook.com/TrekBicycleIndia/">@trekkersoverhere</a>
+           </address>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
+
+</center>
+</body>
+</html>
